@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Shareable Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="dist/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Shareable Resume Builder</h1>
+        <div class="resume-builder">
+            <form id="resumeForm">
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <!-- Rest of the form remains the same -->
+                <button type="submit">Generate Resume</button>
+            </form>
+
+            <div id="resumeDisplay" class="resume-display">
+                <!-- Resume content remains the same -->
+            </div>
+        </div>
+        <div class="share-options">
+            <button id="generateLink">Generate Shareable Link</button>
+            <input type="text" id="shareableLink" readonly>
+            <button id="downloadPDF">Download as PDF</button>
+        </div>
+    </div>
+</body>
+</html>
